@@ -1,0 +1,75 @@
+@font-face {
+    font-family: InterExtraBold;
+    src: url(assets/fonts/static/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: InterBold;
+    src: url(assets/fonts/static/Inter-Bold.ttf)
+}
+
+@font-face {
+    font-family: InterRegular;
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+
+:root{
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: InterRegular;
+}
+
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+/* App css */
+
+.container{
+    max-width: 1440px;
+    margin: 0rem auto;
+    height: 100vh;
+}
+
+/* Nav css */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 5rem;
+    height: 7rem;
+    align-items: center;
+    /* background-color: aqua; */
+}   
+
+.right ul{
+    display: flex;
+    gap: 1.3rem;
+}
+
+li{
+    list-style-type: none;
+    font-weight: 400;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+    transition: all 0.5s;
+}
+
+li a:hover{
+    color: var(--Soft-red);
+}
