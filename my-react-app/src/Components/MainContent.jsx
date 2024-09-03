@@ -1,4 +1,5 @@
 import img from '../assets/images/image-web-3-desktop.jpg'
+import imgMobile from '../assets/images/image-web-3-mobile.jpg'
 import img1 from '../assets/images/image-retro-pcs.jpg'
 import img2 from '../assets/images/image-top-laptops.jpg'
 import img3 from '../assets/images/image-gaming-growth.jpg'
@@ -9,7 +10,8 @@ function MainContent(){
         <main>
             <div className="parts">
                 <div className="partOne">
-                    <img className='imgBig' src={img} alt="" />
+                    <img className='imgBig1' src={img} alt="" />
+                    <img className='imgBig2' src={imgMobile} alt="" />
                     <div className="head-main">
                         <div className="head">
                             <h1>The Bright Future of Web 3.0?</h1>
